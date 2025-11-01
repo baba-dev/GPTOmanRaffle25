@@ -138,17 +138,17 @@ def show_lottie_real():
         show_lottie_fallback()
 
 if start:
-    # ---- ROUND 1 ----
-    show_lottie_real()
-    draw1 = random.choice(first_draw_pool)
-    draw1_ph.info(f"🎯 1st Draw (warm-up): **{draw1}**")
-    time.sleep(1.2)
+    # # ---- ROUND 1 ----
+    # show_lottie_real()
+    # draw1 = random.choice(first_draw_pool)
+    # draw1_ph.info(f"🎯 1st Draw (warm-up): **{draw1}**")
+    # time.sleep(1.2)
 
-    # ---- ROUND 2 ----
-    show_lottie_real()
-    draw2 = random.choice(second_draw_pool)
-    draw2_ph.warning(f"🎯 2nd Draw (runner-up): **{draw2}**")
-    time.sleep(1.2)
+    # # ---- ROUND 2 ----
+    # show_lottie_real()
+    # draw2 = random.choice(second_draw_pool)
+    # draw2_ph.warning(f"🎯 2nd Draw (runner-up): **{draw2}**")
+    # time.sleep(1.2)
 
     # ---- FINAL ROUND (FORCED) ----
     show_lottie_real()
@@ -158,7 +158,7 @@ if start:
             <div class="big-winner-tile">
                 <p>🏆 Final Winner</p>
                 <h1>{final_winner}</h1>
-                <p>Congratulations! You’ve won the <strong>OnePlus Phone</strong> 🎉</p>
+                <p>Congratulations! You’ve won the <strong>Nothing Phone 3a</strong> 🎉</p>
             </div>
             """,
             unsafe_allow_html=True,
@@ -170,3 +170,4 @@ if start:
     st.toast("🎉 Winner finalized! Show this on screen.", icon="🎊")
     time.sleep(5)
     st.snow()
+
