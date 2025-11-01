@@ -84,14 +84,15 @@ col_left, col_right = st.columns([1, 2])
 with col_left:
     # put your 400x400 jpeg in the same directory and name it 'raffle_prize.jpg'
     # or change the path below
-    st.image("raffle_prize.png", width=400, caption="Prize: Nothing Phone 3A Pro", use_column_width=True)
+    st.image("raffle_prize.png", width=400, caption="Prize: Nothing Phone 3a Pro (12/256GB)", use_column_width=True)
 
 with col_right:
     st.subheader("🎁 Welcome to Raffle Picker")
     st.write("Rules of Participation:")
-    st.write("1 - Must be eligible for the promotion.")
-    st.write("2 - Must be an omani national female.")
-    st.write("3 - A Valid Instagram account.")
+    st.write("1 - Follow @gptmobiles_oman")
+    st.write("2 - Like our Instagram post")
+    st.write("3 - Tag 3 or more friends")
+    st.write("4 -  Share this post on your story & tag us")    
     st.divider()
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -161,7 +162,7 @@ if start:
             <div class="big-winner-tile">
                 <p>🏆 Final Winner</p>
                 <h1>{final_winner}</h1>
-                <p>Congratulations! You’ve won the <strong>Nothing Phone 3a</strong> 🎉</p>
+                <p>Congratulations! You’ve won the <strong>Nothing Phone 3a Pro (12/256GB)</strong> 🎉</p>
             </div>
             """,
             unsafe_allow_html=True,
@@ -173,6 +174,7 @@ if start:
     st.toast("🎉 Winner finalized! Show this on screen.", icon="🎊")
     time.sleep(5)
     st.snow()
+
 
 
 
