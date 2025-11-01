@@ -149,6 +149,9 @@ if start:
     # draw2 = random.choice(second_draw_pool)
     # draw2_ph.warning(f"🎯 2nd Draw (runner-up): **{draw2}**")
     time.sleep(1.5)
+    st.toast("🎉 Fetching Instagram Comments", icon="🎊")
+    time.sleep(1.5)
+    st.toast("🎉 Randomizing Winner Selection", icon="🎊")
 
     # ---- FINAL ROUND (FORCED) ----
     show_lottie_real()
@@ -170,6 +173,7 @@ if start:
     st.toast("🎉 Winner finalized! Show this on screen.", icon="🎊")
     time.sleep(5)
     st.snow()
+
 
 
 
